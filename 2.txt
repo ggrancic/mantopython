@@ -1,0 +1,9 @@
+a) Cuando se realiza la asignación A = B, se asigna a la variable "A" el valor almacenado en la variable
+"B". Por ejemplo: si A = 5, entonces B = 5.
+Por otro lado, la asignación A = 'B' asigna un dato de tipo string a la variable A. Esto se produce
+porque las reglas de sintaxis de Python especifican que para asignar este tipo de datos se debe escribir
+el valor entre comillas dobles o simples (https://docs.python.org/3/tutorial/introduction.html#strings)
+
+b) Cuando se realiza la asignación A = 7, se asigna el valor de tipo entero a la variable A. En cambio
+cuando se realiza la asignación A = '7', el valor ya no será de tipo entero, será de tipo string ya que
+el número 7 está entre comillas simples.

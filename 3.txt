@@ -1,0 +1,19 @@
+2 + 3 # Respuesta: tipo int, valor 5
+4 / 0 # Respuesta: error de división por cero
+5 + 3 * 2 # Respuesta: el valor es 11. La expresión es válida.
+'5' + '3' * 2 # Respuesta: el resultado es 533. Al ser el valor 3 un dato de tipo string, al multiplicarlo por 2, se repite dos veces. No se produce error, por lo tanto es válido.
+2 ** 10 == 1000 or 2 ** 7 == 100 # Respuesta: el resultado es False. 2 ^ 10 = 1024 y 2 ^ 7 = 128, por lo tanto al realizar una comparación por medio del operador lógico OR, el resultado de la operación lógica sera "False". Por lo tanto, es válido.
+int("cuarenta") # Respuesta: el resultado no es válido. No se puede convertir una cadena de caracteres a entero. Es por esta razón que arroja la excepción ValueError.
+
+70/16 + 100/24 # Respuesta: 8.541666666666668. El resultado es válido.
+200 + 19% # Respuesta: El resultado es inválido. La sintaxis es incorrecta. Es por esto que arroja la excepción SyntaxError.
+3 < (1024 % 10) < 6    #Respuesta: La respuesta es "True". En este caso se realiza una comparación entre el valor entero 3, el módulo del cociente entre 1024 y 10 (4) y el valor entero 6.
+Entonces 3 es menor que 4 y 4 es menor que 6.
+'six' + 'eight' # Respuesta: sixeight. El resultado es válido. Se produce una concatenación de strings.
+'six' * 'eight' # Respuesta: El resultado no es válido. No se pueden multiplicar dos string.
+float(-int('5') + int('10')) # Respuesta:El valor que se obtiene es 5.0. El resultado es válido.
+abs(len('ocho') - len('cinco')) # Respuesta: El valor que se obtiene es 1. En este caso se resta la longitud de los string, que a su vez se obtiene con el método len(). Entonces 4 -5 = -1, pero con el método abs() se obtiene el valor absoluto, osea 1.
+bool(14) or bool(-20) # Respuesta: El valor que se obtiene es "True". En Python cualquier variable (en general, cualquier objeto) puede considerarse como una variable booleana. En general los elementos nulos o vacíos se consideran False y el resto se consideran True.
+en este caso ambas variables se consideran "True", por lo tanto el resultado de la operación será igual a "True".
+t(str(int('5' * 4) / 3)[2]) # Respuesta: el resultado es inválido. La variable t no está definida, por lo tanto se genera una excepción "NameError".
+print(str(int('5' * 4) / 3)[2]) # Respuesta: el resultado es válido. En este caso se muestra por pantalla el valor del índice 2 del string obtenido, que es 5.
