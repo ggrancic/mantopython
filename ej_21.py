@@ -21,7 +21,7 @@ while continuar == True:
 
     elif opcion.upper() == 'N':
 
-        break
+        continuar = False
 
     else:
 
