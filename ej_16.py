@@ -11,6 +11,6 @@ diametro = 2 * radio
 
 area = (math.pi * (radio ** 2))
 
-circunferencia = 2 * diametro
+circunferencia = math.pi * diametro
 
 print('Circunferencia:', circunferencia,'\nÁrea:', area, '\nDiámetro:', diametro)
