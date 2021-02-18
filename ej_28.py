@@ -29,8 +29,14 @@ for x in range(cantidad):
 # Pregunto si quiero orden ascendente o descendente.
 opcion = input('Desea orden ascendente (A) u orden descendente (D): ')
 if opcion == 'D':
-    print(sorted(lista, reverse=True))
+
+    # Acá lo que hago es separar por comas cada valor de la lista, pero con map lo presento como string a cada valor de la lista
+    # dentro del map, le paso que me conviera a string cada valor con str y le paso la lista pero ya acomodada gracias
+    # al metodo sorted.
+    print (', '.join(map(str, sorted(lista, reverse=True))))
+
 elif opcion == 'A':
-    print(sorted(lista))
+    # hago lo mismo que en el anterior if, pero esta vez sin el reverse=True. osea que me devuelve en orden ascendente.
+    print (', '.join(map(str, sorted(lista))))
 else:
     print('Opción incorrecta!!!!')
