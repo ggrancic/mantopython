@@ -6,8 +6,8 @@ mayor:
     24 51
 """
 
-n1 = int(input('Ingrese un número: '))
-n2 = int(input('Ingrese otro un número: '))
+#n1 = int(input('Ingrese un número: '))
+#n2 = int(input('Ingrese otro un número: '))
 
 """
 # Trabajando con condicionales
@@ -21,9 +21,16 @@ else:
 
 # Trabajando con listas.
 lista = []
-numeros = " "
-for x in range(2):
+cantidad = int(input('Ingrese la cantidad de numeros que desea ordenar: '))
+for x in range(cantidad):
     num = int(input('Ingrese un número: '))
     lista.append(num)
 
-print(sorted(lista, reverse=True))
+# Pregunto si quiero orden ascendente o descendente.
+opcion = input('Desea orden ascendente (A) u orden descendente (D): ')
+if opcion == 'D':
+    print(sorted(lista, reverse=True))
+elif opcion == 'A':
+    print(sorted(lista))
+else:
+    print('Opción incorrecta!!!!')
